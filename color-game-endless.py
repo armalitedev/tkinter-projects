@@ -19,10 +19,14 @@ colto = {
 }
 
 wordto = {
-    1:"Test",
-    2:"Word",
-    3:"AAAA",
-    4:"BBBB"
+    1:"White",
+    2:"Black",
+    3:"Red",
+    4:"Green",
+    5:"Blue",
+    6:"Cyan",
+    7:"Yellow",
+    8:"Magenta"
 }
 
 tot=0
@@ -62,7 +66,7 @@ def start(typed):
             new=True
         else:
             root.destroy()
-    word=wordto[int(random.uniform(1,5))]
+    word=wordto[int(random.uniform(1,9))]
     color=colto[int(random.uniform(1,9))]
     maincolor.config(text=word,fg=color)
     entry.delete(0,END)
